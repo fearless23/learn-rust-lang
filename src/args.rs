@@ -1,4 +1,4 @@
-use std::env::{args};
+use std::env::args;
 
 fn get_nth_arg(n: usize) -> String {
     args().nth(n).unwrap()
@@ -6,13 +6,13 @@ fn get_nth_arg(n: usize) -> String {
 
 #[derive(Debug)]
 pub struct Args {
-    image_1: String,
-    image_2: String,
-    output: String,
+    pub image_1: String,
+    pub image_2: String,
+    pub output: String,
 }
 
 impl Args {
-    pub fn new () -> Self {
+    pub fn new() -> Self {
         Args {
             image_1: get_nth_arg(1),
             image_2: get_nth_arg(2),
