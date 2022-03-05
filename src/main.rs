@@ -1,22 +1,27 @@
-mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() -> i32 {
-            3
-        }
+mod args;
+use args::Args;
+use std::{fs::file, io::BufReader }
+use image::{io::Reader, ImageFormat, DyanmicImage}
 
-        fn seat_at_table() {}
-    }
-
-    mod serving {
-        fn take_order() {}
-
-        fn serve_order() {}
-
-        fn take_payment() {}
-    }
+enum ImageDataErrors {
+    
 }
 
-fn main() {
-    let x = self::front_of_house::hosting::add_to_waitlist();
-    println!("{}", x);
+fn main() -> Result<(), ImageDataErrors> {
+    let args = Args::new();
+    let (image_1, image_format_1) = find_image_from_path(args.image_1)
+    let (image_2, image_format_2) = find_image_from_path(args.image_2)
+    println!("{:?}", args);
+
+    if image_format_1 != image_format_2 {
+        return Err()
+    }
+    Ok(())
+}
+
+fm find_image_from_path (path:String) -> (DynamicImage, ImageFormat) {
+    let image_reader: Reader<BufReader<File>> = Reader::open(path).unwrap();
+    let image_format: ImageFormat = image_reader.format().unwrap();
+    let image: DynamicImage = image_reader.decode().unwrap();
+    (image, image_format)
 }
