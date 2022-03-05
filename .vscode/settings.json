@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "[rust]": {
     "editor.defaultFormatter": "matklad.rust-analyzer",
     "editor.formatOnSave": true
@@ -15,4 +16,12 @@
     ".gitignore": true,
   },
   "editor.tabSize": 4,
+=======
+    "editor.tabSize": 4,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    // "rust-analyzer.inlayHints.enable": false,
+    // "rust-analyzer.inlayHints.chainingHints": false,
+    // "rust-analyzer.inlayHints.parameterHints": false,
+    "editor.formatOnSave": true
+>>>>>>> 13927a915ba361bd2b88a8810cce5c91b86b298d
 }
