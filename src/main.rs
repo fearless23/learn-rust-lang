@@ -44,8 +44,8 @@ impl FloatingImage {
 }
 
 fn main() -> Result<(), ImageDataErrors> {
-    let path_1 = String::from("images/pic3.jpg");
-    let path_2 = String::from("images/pic4.jpg");
+    let path_1 = String::from("images/image1.jpg");
+    let path_2 = String::from("images/image2.jpg");
     let output_path = String::from("images/test.jpg");
     let (image_1, image_format_1) = find_image_from_path(path_1)?;
     let (image_2, image_format_2) = find_image_from_path(path_2)?;
