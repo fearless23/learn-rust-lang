@@ -1,2 +1,2 @@
-tasks:
-  - init: cargo build
+image:
+  file: .gitpod.Dockerfile
