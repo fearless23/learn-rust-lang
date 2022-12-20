@@ -22,24 +22,25 @@ fn top_three_groups(numbers: Vec<u64>) -> u64 {
 		}
 	}
 
-	let mut s: u64 = groups[0];
-	let mut m: u64 = groups[1];
-	let mut l: u64 = groups[2];
+	let mut sm: u64 = groups[0];
+	let mut md: u64 = groups[1];
+	let mut lg: u64 = groups[2];
 
 	for num in groups {
-		if num > s {
-			if num <= m {
-				s = num;
+		if num < sm {
+			continue;
+		}
+		if num <= md {
+			sm = num;
+		} else {
+			sm = md;
+			if num <= lg {
+				md = num;
 			} else {
-				s = m;
-				if num <= l {
-					m = num;
-				} else {
-					m = l;
-					l = num;
-				}
+				md = lg;
+				lg = num;
 			}
 		}
 	}
-	s + m + l
+	sm + md + lg
 }
