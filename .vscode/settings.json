@@ -4,5 +4,8 @@
   "rust-analyzer.inlayHints.typeHints.enable": true,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    100
+  ]
 }
