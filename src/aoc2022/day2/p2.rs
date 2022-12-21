@@ -1,4 +1,4 @@
-fn main() {
+pub fn solution() {
 	let moves = get_moves();
 	// println!("MOVES {:?}", moves);
 	let score = calculate_score(moves);
