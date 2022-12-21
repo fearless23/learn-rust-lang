@@ -16,7 +16,7 @@ fn main() {
 
 // 2
 fn parse_file2() {
-	let s = include_str!("input.txt");
+	let s = include_str!("src/others/input.txt");
 	let str_to_int = str::parse::<i64>;
 	let mut s = s.split('\n').map(str_to_int);
 
