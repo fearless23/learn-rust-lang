@@ -1,7 +1,7 @@
 {
   "editor.tabSize": 2,
   "rust-analyzer.checkOnSave.command": "clippy",
-  "rust-analyzer.inlayHints.typeHints.enable": true,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "editor.formatOnSave": true,

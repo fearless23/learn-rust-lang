@@ -98,3 +98,12 @@ fn get_char_priority(i: String) -> u32 {
 		_ => 0,
 	}
 }
+
+// collect is very good, can collect to any type
+fn get_lines_c() {
+	let input = read_to_string("src/aoc2022/day3/input.txt").unwrap();
+	let _out = input
+		.lines()
+		.map(|i| i.to_string().chars().collect::<HashSet<char>>())
+		.collect::<Vec<HashSet<char>>>();
+}
